@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Product</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar page">
+      <div class="nav-center">
+        <!-- LINKS -->
+        <div>
+          <button class="toggle-nav">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">home</a></li>
+            <li><a href="products.html" class="nav-link">products</a></li>
+            <li><a href="about.html" class="nav-link">about</a></li>
+          </ul>
+        </div>
+        <!-- LOGO -->
+        <img src="./images/logo-black.svg" class="nav-logo" alt="logo" />
+        <!-- CART ICON -->
+        <div class="toggle-container">
+          <button class="toggle-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <span class="cart-item-count">1</span>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="section-center">
+        <h3 class="page-hero-title"></h3>
+      </div>
+    </section>
+    <!-- SIDEBAR -->
+    <div class="sidebar-overlay">
+      <aside class="sidebar">
+        <!-- close button -->
+        <button class="sidebar-close">
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+        </button>
+        <!-- links -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html" class="sidebar-link"
+              ><i class="fa-solid fa-house-chimney-crack fa-fw"></i>home</a
+            >
+          </li>
+          <li>
+            <a href="index.html" class="sidebar-link"
+              ><i class="fa-solid fa-couch fa-fw"></i>products</a
+            >
+          </li>
+          <li>
+            <a href="index.html" class="sidebar-link"
+              ><i class="fa-solid fa-book fa-fw"></i>about</a
+            >
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <!-- CART -->
+    <div class="cart-overlay">
+      <aside class="cart">
+        <button class="cart-close">
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+        </button>
+        <header>
+          <h3 class="text-slanted">your cart</h3>
+        </header>
+        <!-- cart items -->
+        <div class="cart-items"></div>
+        <!-- footer -->
+        <footer>
+          <h3 class="cart-total text-slanted">total : $12.99</h3>
+          <button class="cart-checkout btn">checkout</button>
+        </footer>
+      </aside>
+    </div>
+    <!-- PRODUCT INFO -->
+    <section class="single-product">
+      <div class="section-center single-product-center">
+        <img src="" class="single-product-img img" alt="srth" />
+        <article class="single-product-info">
+          <div>
+            <h2 class="single-product-title">couch</h2>
+            <p class="single-product-company text-slanted">sgsdfgzd</p>
+            <p class="single-product-price">555</p>
+            <div class="single-product-colors"></div>
+            <p class="single-product-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              ipsa id nihil error obcaecati hic nulla alias officiis, cumque, ea
+              est vero quibusdam. Eius deserunt voluptatum dolor, facere
+              nesciunt minima impedit eaque expedita magni blanditiis quos
+              suscipit aspernatur est ratione!
+            </p>
+            <button class="addToCartBtn btn" data-id="id">add to cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- PAGE LOADING -->
+    <div class="page-loading">
+      <h2>Loading...</h2>
+    </div>
+    <script type="module" src="./src/pages/product.js"></script>
+  </body>
+</html>
